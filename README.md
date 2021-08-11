@@ -8,7 +8,7 @@ Este JavaScript representa o labirinto descrito acima. Cada "W" representa uma p
 
 ```js
 const map = [
-    "WWWWWWWWWWWWWWWWWWWWW",
+    ["R, B, B, B, V,WWWWWWWWWWWWWWWW"],
     "W   W     W     W W W",
     "W W W WWW WWWWW W W W",
     "W W W   W     W W   W",
@@ -25,7 +25,6 @@ const map = [
     "WWWWWWWWWWWWWWWWWWWWW",
 ];
 ```
-
 ## Orientação
 
 1. Faça com que cada célula do labirinto seja um DIV.
