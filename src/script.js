@@ -80,7 +80,7 @@ let columnStart = 0;
         const keyName = evt.key;
         if (keyName === "ArrowDown") {
             lineStart += 1;
-            if (map[lineStart][columnStart] !== "W"){
+            if (map[lineStart][columnStart] !== "W" && map[lineStart][columnStart] !== undefined){
             let lineNodes = document.getElementById(`line${lineStart}`);
             let arrNodes = lineNodes.childNodes;
             let nextPostion = arrNodes[columnStart];
@@ -92,7 +92,7 @@ let columnStart = 0;
         }
         if (keyName === "ArrowUp") {
             lineStart -= 1;
-            if (map[lineStart][columnStart] !== "W"){
+            if (map[lineStart][columnStart] !== "W" && map[lineStart][columnStart] !== undefined){
             let lineNodes = document.getElementById(`line${lineStart}`);
             let arrNodes = lineNodes.childNodes;
             let nextPostion = arrNodes[columnStart];
@@ -104,7 +104,7 @@ let columnStart = 0;
         }
         if (keyName === "ArrowRight") {
             columnStart += 1;
-            if (map[lineStart][columnStart] !== "W" && map[lineStart][columnStart] !== "F"){
+            if (map[lineStart][columnStart] !== "W" && map[lineStart][columnStart] !== "F" && map[lineStart][columnStart] !== undefined){
             let lineNodes = document.getElementById(`line${lineStart}`);
             let arrNodes = lineNodes.childNodes;
             let nextPostion = arrNodes[columnStart];
@@ -119,7 +119,7 @@ let columnStart = 0;
 
         if (keyName === "ArrowLeft") {
             columnStart -= 1;
-            if (map[lineStart][columnStart] !== "W"){
+            if (map[lineStart][columnStart] !== "W" && map[lineStart][columnStart] !== undefined){
             let lineNodes = document.getElementById(`line${lineStart}`);
             let arrNodes = lineNodes.childNodes;
             let nextPostion = arrNodes[columnStart];
